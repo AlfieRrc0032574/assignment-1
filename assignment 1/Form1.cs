@@ -38,8 +38,10 @@ namespace assignment_1
             {
                 Double sR1 = double.Parse(SR1.Text);
                 Double sR2 = double.Parse(SR2.Text);
+                Double sR3 = double.Parse(textBox5.Text);
+                Double sR4 = double.Parse(textBox6.Text);
 
-                double TR = sR1 + sR2;
+                double TR = sR1 + sR2 + sR3 + sR4;
                 MessageBox.Show("Total resistance = " + TR.ToString("0.00") + " cm");
             }
             catch
@@ -75,14 +77,47 @@ namespace assignment_1
             {
                 Double pR1 = double.Parse(textBox1.Text);
                 Double pR2 = double.Parse(textBox2.Text);
+                Double pR3 = double.Parse(textBox3.Text);
+                Double pR4 = double.Parse(textBox4.Text);
 
-                double TR = 1/pR1 + 1/pR2;
+
+                double TR = 1/pR1 + 1/pR2 + 1/pR3 + 1/pR4;
                 MessageBox.Show("Total resistance = " + TR.ToString("0.00") + " cm");
             }
             catch
             {
-                MessageBox.Show("Stop leaving your computer unattended");
+                MessageBox.Show("wait i know you......AHA *backs away ");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
