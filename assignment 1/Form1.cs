@@ -34,19 +34,19 @@ namespace assignment_1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
+            try 
             {
-                Double sR1 = double.Parse(SR1.Text);
+                Double sR1 = double.Parse(SR1.Text); // these four lines are coding in the boxes where the user can input their numbers and the boxes are coded to represent a variable 
                 Double sR2 = double.Parse(SR2.Text);
                 Double sR3 = double.Parse(textBox5.Text);
                 Double sR4 = double.Parse(textBox6.Text);
 
-                double TR = sR1 + sR2 + sR3 + sR4;
+                double TR = sR1 + sR2 + sR3 + sR4; // this is the formula for the series circuit and it uses the variables from the inbox boxes 
                 MessageBox.Show("Total resistance = " + TR.ToString("0.00") + " cm");
             }
             catch
             {
-                MessageBox.Show("Stop! You have violated the law PAY THE COURT A FINE OR SERVE YOUR SENTENCE!");
+                MessageBox.Show("Stop! You have violated the law PAY THE COURT A FINE OR SERVE YOUR SENTENCE!");// this is for when anything than an number is entered it comes up with this message to notify the user they have entered something invalid 
             }
 
         }
@@ -75,18 +75,18 @@ namespace assignment_1
         {
             try
             {
-                Double pR1 = double.Parse(textBox1.Text);
+                Double pR1 = double.Parse(textBox1.Text); // this is the same code again except it is coding the boxes into variables 
                 Double pR2 = double.Parse(textBox2.Text);
                 Double pR3 = double.Parse(textBox3.Text);
                 Double pR4 = double.Parse(textBox4.Text);
 
 
-                double TR = 1/pR1 + 1/pR2 + 1/pR3 + 1/pR4;
+                double TR = 1/pR1 + 1/pR2 + 1/pR3 + 1/pR4; // this is the formula for the parrallel cicuit whihc is also using the variables 
                 MessageBox.Show("Total resistance = " + TR.ToString("0.00") + " cm");
             }
             catch
             {
-                MessageBox.Show("wait i know you......AHA *backs away ");
+                MessageBox.Show("wait i know you......AHA *backs away "); // this is another msg that tells the user thay have entered an incorrect character 
             }
         }
 
@@ -115,7 +115,7 @@ namespace assignment_1
 
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void textBox6_TextChanged(object sender, EventArgs e) // these lines of code are for renaming parts of the program so that it is easier for me to code
         {
 
         }
